@@ -1080,6 +1080,19 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.9.5.tgz#10491ccf4f63c814d4149e0316541476ea603602"
   integrity sha512-1q+mykKE3Vot1kaFJIDoUFv5TuW+QQVaf2FmTT9krg86pQrGStOSJJ0Zil7CFagyxDuouTepzt5Y5TVzyajOdQ==
 
+"@tabler/icons-react@^2.46.0":
+  version "2.46.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.46.0.tgz#a24cf737687a18cdf1b0e1189ef69462e82dbd89"
+  integrity sha512-X8MRxuslIOFqMjAo+GvUZDpjlOwNYNJTuOsHXf/NBvVI6ygqUf0FUNsDLLA5fQ6k6KtRwxMlgGB+eR8ZG1UP0g==
+  dependencies:
+    "@tabler/icons" "2.46.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.46.0":
+  version "2.46.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.46.0.tgz#e629df8901b799372914c694000cc2ea3d45bb6b"
+  integrity sha512-Q5G8Pj5IO+Uhc6pszpu5/hGYY018JwEzzvmuqr+gKJtfIvAHA3umpwUilMRLEy89p+WCP+YsDhicMhfBCCv1qA==
+
 "@types/acorn@^4.0.0":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@types/acorn/-/acorn-4.0.6.tgz#d61ca5480300ac41a7d973dd5b84d0a591154a22"
@@ -4641,7 +4654,7 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
