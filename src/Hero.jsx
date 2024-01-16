@@ -1,22 +1,22 @@
+import hero1 from "./assets/hero1.png";
+
 function Hero() {
   return (
     <div
       className="hero min-h-screen"
       style={{
-        backgroundImage:
-          "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+        backgroundImage: `url(${hero1})`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1 className="my-5 text-7xl font-bold ">M&M GEOINGENIERÍA</h1>
+          <p className="my-10 text-2xl">
+            Soluciones en el sector de la Ingeniería, Consultoría e
+            Hidrocarburos
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">CONTÁCTENOS</button>
         </div>
       </div>
     </div>
