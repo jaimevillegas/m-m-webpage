@@ -1,32 +1,76 @@
-import { Button, Navbar } from "flowbite-react";
+import logo from "./assets/logo.png";
 
 function NavBar() {
   return (
-    <Navbar fluid rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
-        <img
-          src="/favicon.svg"
-          className="mr-3 h-6 sm:h-9"
-          alt="Flowbite React Logo"
-        />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite React
-        </span>
-      </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Button>Get started</Button>
-        <Navbar.Toggle />
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden h-20 pr-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-9 w-9"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 rounded-box w-60"
+          >
+            <li>
+              <a>INICIO</a>
+            </li>
+            <li>
+              <a>INGENIERÍA Y DISEÑO</a>
+            </li>
+            <li>
+              <a>CONSULTORÍA</a>
+            </li>
+            <li>
+              <a>NUESTROS CLIENTES</a>
+            </li>
+            <li>
+              <a>CONTÁCTENOS</a>
+            </li>
+          </ul>
+        </div>
+        {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
+        <a href="#">
+          <img src={logo} alt="logo" className="h-20" />
+        </a>
       </div>
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>INICIO</a>
+          </li>
+          <li>
+            <a>INGENIERÍA Y DISEÑO</a>
+          </li>
+          <li>
+            <a>CONSULTORÍA</a>
+          </li>
+          <li>
+            <a>NUESTROS CLIENTES</a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn btn-primary ">CONTÁCTENOS</a>
+      </div>
+    </div>
   );
 }
 
