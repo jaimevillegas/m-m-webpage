@@ -2,7 +2,7 @@ import logo from "./assets/logo.png";
 
 function NavBar() {
   return (
-    <div className="navbar bg-base-100 fixed shadow">
+    <div className="navbar bg-base-100 fixed shadow z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div
