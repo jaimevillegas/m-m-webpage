@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Card from "./Card";
 import HeroServices from "./HeroServices";
 import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Card />
       </div>
       <HeroServices />
+      <Carousel />
       <Footer />
     </>
   );
