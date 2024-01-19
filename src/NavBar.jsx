@@ -1,4 +1,5 @@
 import logo from "./assets/logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -47,23 +48,26 @@ function NavBar() {
           </ul>
         </div>
         {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="logo" className="h-20" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>INICIO</a>
+            <Link to="/">INICIO</Link>
           </li>
           <li>
-            <a>INGENIERÍA Y DISEÑO</a>
+            <Link to="/ingenieria">INGENIERÍA Y DISEÑO</Link>
           </li>
           <li>
-            <a>CONSULTORÍA</a>
+            <Link to="/consultoria">CONSULTORÍA</Link>
           </li>
           <li>
-            <a>NUESTROS CLIENTES</a>
+            <Link to="/galeria">GALERÍA</Link>
+          </li>
+          <li>
+            <Link to="/clientes">NUESTROS CLIENTES</Link>
           </li>
         </ul>
       </div>
