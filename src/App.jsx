@@ -1,19 +1,13 @@
-import NavBar from "./NavBar";
-import Hero from "./Hero";
-import HeroServices from "./HeroServices";
-import Footer from "./Footer";
-import Carousel from "./Carousel";
-import QuienesSomos from "./QuienesSomos";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./Home";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <QuienesSomos />
-      <HeroServices />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
