@@ -1,3 +1,5 @@
+import Carousel from "./Carousel";
+
 function QuienesSomos() {
   return (
     <div>
@@ -10,6 +12,7 @@ function QuienesSomos() {
         ampliar nuestro campo de trabajo, brindando nuevas tecnologías y
         procedimientos calificados y certificados
       </p>
+      <Carousel />
     </div>
   );
 }

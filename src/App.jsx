@@ -12,7 +12,6 @@ function App() {
       <Hero />
       <QuienesSomos />
       <HeroServices />
-      <Carousel />
       <Footer />
     </>
   );
