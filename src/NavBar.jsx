@@ -72,7 +72,9 @@ function NavBar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary ">CONTÁCTENOS</a>
+        <a className="btn btn-primary ">
+          <Link to="/contacto">CONTÁCTENOS</Link>
+        </a>
       </div>
     </div>
   );
