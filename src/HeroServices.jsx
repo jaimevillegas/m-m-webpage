@@ -4,7 +4,7 @@ import engineer from "./assets/engineer.png";
 
 function HeroServices() {
   return (
-    <div className="pb-0 pt-10 mb-0 bg-base-200">
+    <div className="pb-0 pt-10 mb-0 bg-base-200 topo-pattern">
       <h1 className="text-7xl font-bold text-center pt-5">Servicios</h1>
       <div className="px-36 flex justify-between items-center lg:flex-row py-0 w-full gap-20">
         <img src={engineer} className="max-w-2xl rounded-lg" />

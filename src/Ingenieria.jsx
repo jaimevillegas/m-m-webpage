@@ -1,36 +1,49 @@
+import Footer from "./Footer";
 import NavBar from "./NavBar";
 
 function Ingenieria() {
   return (
     <>
       <NavBar />
-      <h1 className="text-8xl bold pt-40 text-center">INGENIERÍA Y DISEÑO</h1>
-      <ul className="p-5 list-disc">
-        <li>
-          Ingeniería Conceptual, Básica y Detalle en el sector hidrocarburos.
-        </li>
-        <li>
-          Diseño de cruces especiales - subfluviales y de vías para el paso de
-          líneas eléctricas, oleoductos, gasoductos, acueducto y alcantarillado
-        </li>
-        <li>Diseños de vías y locaciones</li>
-        <li>Pilotes y Micropilotes</li>
-        <li>
-          Diseño de proyectos lineales en el sector Minas - Energía e
-          infraestructura.
-        </li>
-        <li>Diseño Geométrico de vías.</li>
-        <li>Diseño de gasoductos, oleoductos y poliductos.</li>
-        <li>
-          Diseño de obras de Geotecnia para cimentaciones, estabilidad de
-          taludes, excavaciones superficiales y subterráneas, zonas inestables y
-          pavimentos.
-        </li>
-        <li>
-          Diseño y construcción de pozos de aguas subterráneas, Piezómetros e
-          Inclinómetros.
-        </li>
-      </ul>
+      <div className="pb-0 pt-10 mb-0 bg-base-200 gear-pattern">
+        <div className="card bg-white mx-32 mt-32 p-10 shadow-xl">
+          <h1 className="font-poppins font-semibold text-6xl text-center">
+            INGENIERÍA Y DISEÑO
+          </h1>
+          <ul className="p-10 list-disc">
+            <li className="text-xl my-4">
+              Ingeniería Conceptual, Básica y Detalle en el sector
+              hidrocarburos.
+            </li>
+            <li className="text-xl my-4">
+              Diseño de cruces especiales - subfluviales y de vías para el paso
+              de líneas eléctricas, oleoductos, gasoductos, acueducto y
+              alcantarillado
+            </li>
+            <li className="text-xl my-4">Diseños de vías y locaciones</li>
+            <li className="text-xl my-4">Pilotes y Micropilotes</li>
+            <li className="text-xl my-4">
+              Diseño de proyectos lineales en el sector Minas - Energía e
+              infraestructura.
+            </li>
+            <li className="text-xl my-4">Diseño Geométrico de vías.</li>
+            <li className="text-xl my-4">
+              Diseño de gasoductos, oleoductos y poliductos.
+            </li>
+            <li className="text-xl my-4">
+              Diseño de obras de Geotecnia para cimentaciones, estabilidad de
+              taludes, excavaciones superficiales y subterráneas, zonas
+              inestables y pavimentos.
+            </li>
+            <li className="text-xl my-4">
+              Diseño y construcción de pozos de aguas subterráneas, Piezómetros
+              e Inclinómetros.
+            </li>
+          </ul>
+        </div>
+        <div className="mt-16"></div>
+        <Footer />
+      </div>
     </>
   );
 }
