@@ -13,6 +13,13 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         poppinsBold: ["poppins", "sans-serif"],
       },
+      colors: {
+        "main-orange": "#E5963A",
+        "main-blue": "#416293",
+        "main-red": "#E83A43",
+        "main-brown": "#9D6438",
+        "main-black": "#211C22",
+      },
     },
   },
   daisyui: {

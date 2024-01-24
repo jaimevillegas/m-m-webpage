@@ -1,6 +1,9 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import contact from "./assets/contact.png";
+import Map from "./Map";
+import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
 
 function Contacto() {
   const [formData, setFormData] = useState({
@@ -26,8 +29,30 @@ function Contacto() {
           <h1 className="font-poppins font-semibold text-6xl text-center mb-10">
             CONTÁCTENOS
           </h1>
-          <form onSubmit={handleSubmit} className="">
-            <div className="flex-col justify-between items-center">
+          <p className="text-center text-xl py-10">
+            Estamos ubicados en la Calle 15A Nro. 36-04, en el barrio Bella
+            suiza - Acacías, Meta
+          </p>
+          <Map />
+          <p className="text-center text-xl pt-12">
+            Puedes ponerte en contacto con nosotros a través de estos medios:
+          </p>
+          <div className="flex gap-4 pb-4 pt-10 justify-center items-center">
+            <IconMailFilled />
+            <p className="text-left text-xl">
+              gerencia.geoingenieriamm@gmail.com
+            </p>
+          </div>
+          <div className="flex gap-4 pb-10 justify-center items-center">
+            <IconPhoneFilled />
+            <p className="text-left text-xl">3016603907</p>
+          </div>
+
+          <p className="text-center text-xl py-10">
+            O puedes escribirnos usando el siguiente formulario:
+          </p>
+          <div className="flex justify-center items-center">
+            <form onSubmit={handleSubmit} className="">
               <label className="my-4">
                 Nombre:
                 <input
@@ -62,8 +87,8 @@ function Contacto() {
                 value="Submit"
                 className="btn btn-primary mt-8"
               />
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
         <div className="mt-16"></div>
         <Footer />

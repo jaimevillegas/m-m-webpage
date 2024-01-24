@@ -12,6 +12,9 @@ function QuienesSomos() {
         ampliar nuestro campo de trabajo, brindando nuevas tecnologías y
         procedimientos calificados y certificados
       </p>
+      <h1 className="text-center text-4xl my-4">
+        Carrusel (Trabajo en progreso)
+      </h1>
       <Carousel />
     </div>
   );
