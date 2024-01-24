@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import contact from "./assets/contact.png";
 import Map from "./Map";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
 
