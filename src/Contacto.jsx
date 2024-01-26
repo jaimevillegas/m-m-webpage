@@ -1,25 +1,25 @@
-import { useState } from "react";
+// import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Map from "./Map";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
 
 function Contacto() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Here you would typically send the form data to your server
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   // Here you would typically send the form data to your server
+  // };
   return (
     <>
       <NavBar />
@@ -32,21 +32,39 @@ function Contacto() {
             Estamos ubicados en la Calle 15A Nro. 36-04, en el barrio Bella
             suiza - Acacías, Meta
           </p>
-          <Map />
-          <p className="text-center text-xl pt-12">
+          <div className="h-full items-center mb-96 ">
+            <Map />
+          </div>
+          <p className="text-center text-xl pt-12 mt-96">
             Puedes ponerte en contacto con nosotros a través de estos medios:
           </p>
-          <div className="flex gap-4 pb-4 pt-10 justify-center items-center">
+          <div className="flex gap-4 pt-10 justify-center items-center">
             <IconMailFilled />
-            <p className="text-left text-xl">
-              gerencia.geoingenieriamm@gmail.com
-            </p>
+            <a
+              href="mailto:contacto.geoingenieriamm@gmail.com"
+              className="text-xl"
+            >
+              contacto.geoingenieriamm@gmail.com
+            </a>
           </div>
-          <div className="flex gap-4 pb-10 justify-center items-center">
+          <div className="flex gap-4 pb-4 pt-4 justify-center items-center">
+            <IconMailFilled />
+            <a
+              href="mailto:gerencia.geoingenieriamm@gmail.com"
+              className="text-xl"
+            >
+              gerencia.geoingenieriamm@gmail.com
+            </a>
+          </div>
+          <div className="flex gap-4 pt-10  justify-center items-center">
             <IconPhoneFilled />
             <p className="text-left text-xl">3016603907</p>
           </div>
-
+          <div className="flex gap-4 pb-10 pt-4 justify-center items-center">
+            <IconPhoneFilled />
+            <p className="text-left text-xl">3188982231</p>
+          </div>
+          {/*
           <p className="text-center text-xl py-10">
             O puedes escribirnos usando el siguiente formulario:
           </p>
@@ -88,6 +106,7 @@ function Contacto() {
               />
             </form>
           </div>
+  */}
         </div>
         <div className="mt-16"></div>
         <Footer />

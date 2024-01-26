@@ -1,51 +1,26 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
-import GoogleMapReact from "google-map-react";
+import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
-const AnyReactComponent = ({ text }) => (
-  <div
-    style={{
-      color: "white",
-      background: "red",
-      padding: "15px 10px",
-      display: "inline-flex",
-      textAlign: "center",
-      alignItems: "center",
-      justifyContent: "center",
-      borderRadius: "100%",
-      transform: "translate(-50%, -50%)",
-    }}
-  >
-    {text}
-  </div>
-);
+export default GoogleApiWrapper({
+  apiKey: "AIzaSyCfd1va1bA7jsdxoTwa8yPCYQK7HXGjepc",
+})(CompanyMap);
 
-export default function Map() {
-  const markerPosition = {
-    lat: 3.9898524284362793,
-    lng: -73.77669525146484,
-  };
-
-  const defaultProps = {
-    center: markerPosition,
-    zoom: 18,
+function CompanyMap(props) {
+  const mapStyles = {
+    position: "relative",
+    width: "95%",
+    height: "55%",
   };
 
   return (
-    // Important! Always set the container height explicitly
-    <div className="px-24" style={{ height: "60vh", width: "100%" }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyCfd1va1bA7jsdxoTwa8yPCYQK7HXGjepc" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          // lat={3.9898524284362793}
-          // lng={-73.77669525146484}
-          lat={markerPosition.lat}
-          lng={markerPosition.lng}
-          text="M&M"
-        />
-      </GoogleMapReact>
-    </div>
+    <Map
+      google={props.google}
+      zoom={17}
+      style={mapStyles}
+      initialCenter={{ lat: 3.8301766, lng: -73.69300098 }}
+    >
+      <Marker position={{ lat: 3.8301766, lng: -73.69300098 }} />
+    </Map>
   );
 }
