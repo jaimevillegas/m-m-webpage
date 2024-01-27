@@ -67,7 +67,7 @@ function NavBar() {
             <Link to="/galeria">GALERÍA</Link>
           </li>
           <li>
-            <Link to="/clientes">NUESTROS CLIENTES</Link>
+            <Link to="/clientes-proyectos">CLIENTES Y PROYECTOS</Link>
           </li>
         </ul>
       </div>

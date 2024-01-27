@@ -5,21 +5,6 @@ import Map from "./Map";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
 
 function Contacto() {
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-
-  // const handleChange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(formData);
-  //   // Here you would typically send the form data to your server
-  // };
   return (
     <>
       <NavBar />
@@ -64,49 +49,6 @@ function Contacto() {
             <IconPhoneFilled />
             <p className="text-left text-xl">3188982231</p>
           </div>
-          {/*
-          <p className="text-center text-xl py-10">
-            O puedes escribirnos usando el siguiente formulario:
-          </p>
-          <div className="flex justify-center items-center">
-            <form onSubmit={handleSubmit} className="">
-              <label className="my-4">
-                Nombre:
-                <input
-                  type="text"
-                  name="name"
-                  className="flex mb-8 input input-bordered"
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-              </label>
-              <label>
-                Email:
-                <input
-                  type="email"
-                  name="email"
-                  className="flex mb-8 input input-bordered"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </label>
-              <label>
-                Mensaje:
-                <textarea
-                  name="message"
-                  className="flex textarea h-24 w-56 textarea-bordered"
-                  value={formData.message}
-                  onChange={handleChange}
-                />
-              </label>
-              <input
-                type="submit"
-                value="Submit"
-                className="btn btn-primary mt-8"
-              />
-            </form>
-          </div>
-  */}
         </div>
         <div className="mt-16"></div>
         <Footer />
