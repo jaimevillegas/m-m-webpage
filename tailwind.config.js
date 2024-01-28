@@ -19,11 +19,23 @@ module.exports = {
         "main-red": "#E83A43",
         "main-brown": "#9D6438",
         "main-black": "#211C22",
+        "palette-orange": "#FE7A36",
+        "palette-blue": "#3652AD",
+        "palette-dark-blue": "#280274",
+        "palette-sky-blue": "#E9F6FF",
       },
     },
   },
   daisyui: {
-    themes: ["emerald"],
+    // themes: ["emerald"],
+    themes: [
+      "emerald",
+      {
+        myTheme: {
+          primary: "#FE7A36",
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 };

@@ -108,7 +108,7 @@ function ClientesProyectos() {
               <img
                 src={cliente.image}
                 alt="cliente"
-                className="mx-auto w-1/3"
+                className="mx-auto w-1/4"
               />
               <h2 className="font-poppins font-semibold text-3xl text-center mb-5 mt-5">
                 ALCANCE

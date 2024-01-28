@@ -1,9 +1,9 @@
-import logo from "./assets/logo.png";
+import logo from "./assets/logo2.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="navbar bg-base-100 fixed shadow z-10">
+    <div className="navbar bg-palette-sky-blue fixed shadow z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -55,26 +55,39 @@ function NavBar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">INICIO</Link>
+            <Link to="/">
+              <p className="font-semiBold text-xl">INICIO</p>
+            </Link>
           </li>
           <li>
-            <Link to="/ingenieria">INGENIERÍA Y DISEÑO</Link>
+            <Link to="/ingenieria">
+              <p className="font-semiBold text-xl ">INGENIERÍA Y DISEÑO</p>
+            </Link>
           </li>
           <li>
-            <Link to="/consultoria">CONSULTORÍA</Link>
+            <Link to="/consultoria">
+              <p className="font-semiBold text-xl ">CONSULTORÍA</p>
+            </Link>
           </li>
           <li>
-            <Link to="/galeria">GALERÍA</Link>
+            <Link to="/galeria">
+              <p className="font-semiBold text-xl ">GALERÍA</p>
+            </Link>
           </li>
           <li>
-            <Link to="/clientes-proyectos">CLIENTES Y PROYECTOS</Link>
+            <Link to="/clientes-proyectos">
+              <p className="font-semiBold text-xl ">CLIENTES Y PROYECTOS</p>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="/contacto" className="btn btn-primary ">
+        <Link
+          to="/contacto"
+          className="btn btn-md bg-palette-blue text-white hover:bg-palette-dark-blue"
+        >
           CONTÁCTENOS
-        </a>
+        </Link>
       </div>
     </div>
   );
