@@ -56,27 +56,27 @@ function NavBar() {
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link to="/">
-              <p className="font-semiBold text-xl">INICIO</p>
+              <p className="font-medium text-xl">INICIO</p>
             </Link>
           </li>
           <li>
             <Link to="/ingenieria">
-              <p className="font-semiBold text-xl ">INGENIERÍA Y DISEÑO</p>
+              <p className="font-medium text-xl ">INGENIERÍA Y DISEÑO</p>
             </Link>
           </li>
           <li>
             <Link to="/consultoria">
-              <p className="font-semiBold text-xl ">CONSULTORÍA</p>
+              <p className="font-medium text-xl ">CONSULTORÍA</p>
             </Link>
           </li>
           <li>
             <Link to="/galeria">
-              <p className="font-semiBold text-xl ">GALERÍA</p>
+              <p className="font-medium text-xl ">GALERÍA</p>
             </Link>
           </li>
           <li>
             <Link to="/clientes-proyectos">
-              <p className="font-semiBold text-xl ">CLIENTES Y PROYECTOS</p>
+              <p className="font-medium text-xl ">CLIENTES Y PROYECTOS</p>
             </Link>
           </li>
         </ul>

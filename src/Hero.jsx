@@ -8,7 +8,7 @@ function Hero() {
         backgroundImage: `url(${hero2})`,
       }}
     >
-      <div className="hero-overlay bg-opacity-75"></div>
+      <div className="hero-overlay bg-opacity-80"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="px-32">
           <h1 className="my-16 text-8xl font-bold text-palette-orange text-center">

@@ -3,10 +3,10 @@ import Carousel from "./Carousel";
 function QuienesSomos() {
   return (
     <div>
-      <h1 className="text-7xl font-bold text-palette-dark-blue text-center pt-10">
+      <h1 className="text-7xl font-bold text-palette-dark-blue text-center py-16">
         ¿Quiénes Somos?
       </h1>
-      <p className="px-40 py-10 text-xl text-center">
+      <p className="px-40 py-10 text-2xl text-center">
         M&M Geoingeniería es una empresa consituída en el año 2020, orientada a
         atender y satisfacer las necesidades de ingeniería y consultoría en el
         sector de Hidrocarburos, Minería, Geología y Obras Civiles. Con la
@@ -14,9 +14,6 @@ function QuienesSomos() {
         ampliar nuestro campo de trabajo, brindando nuevas tecnologías y
         procedimientos calificados y certificados
       </p>
-      <h1 className="text-center text-4xl my-4">
-        Carrusel (Trabajo en progreso)
-      </h1>
       <Carousel />
     </div>
   );
