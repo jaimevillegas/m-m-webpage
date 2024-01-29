@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 function HorizontalCard({ icon: Icon, title, list1, list2, list3 }) {
   return (
-    <div className="card card-side bg-palette-sky-blue shadow-xl my-5">
+    <div className="card card-side bg-palette-sky-blue shadow-xl my-5 transition hover:shadow-2xl">
       <div className="flex items-center justify-center pl-12 pr-8">
         <div className="bg-palette-orange p-4 rounded-full">
           <Icon size={64} style={{ color: "black" }} />

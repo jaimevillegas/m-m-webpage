@@ -7,7 +7,7 @@ function Consultoria() {
       <NavBar />
       <div className="pb-0 pt-10 mb-0 bg-base-200 topo-pattern">
         <div className="card bg-white mx-32 mt-32 p-10 shadow-xl">
-          <h1 className="font-poppins font-semibold text-6xl text-center">
+          <h1 className="font-poppins font-semibold text-palette-dark-blue text-6xl text-center">
             CONSULTORÍA
           </h1>
           <ul className="p-10 list-disc">

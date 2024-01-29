@@ -97,12 +97,12 @@ function ClientesProyectos() {
       <NavBar />
       <div className="pb-0 pt-10 mb-0 bg-base-200  gallery-pattern">
         <div className="card bg-white mx-32 mt-32 p-10 shadow-xl">
-          <h1 className="font-poppins font-semibold text-6xl text-center mb-24">
+          <h1 className="font-poppins font-semibold text-palette-dark-blue text-6xl text-center mb-24">
             CLIENTES Y PROYECTOS
           </h1>
           {clientesInfo.map((cliente, index) => (
             <div key={index}>
-              <h2 className="font-poppins font-semibold text-3xl text-center mb-5 ">
+              <h2 className="font-poppins font-semibold text-palette-dark-blue text-3xl text-center mb-5 ">
                 EMPRESA
               </h2>
               <img
@@ -110,11 +110,11 @@ function ClientesProyectos() {
                 alt="cliente"
                 className="mx-auto w-1/4"
               />
-              <h2 className="font-poppins font-semibold text-3xl text-center mb-5 mt-5">
+              <h2 className="font-poppins font-semibold text-palette-dark-blue text-3xl text-center mb-5 mt-12">
                 ALCANCE
               </h2>
-              <p className="px-32 text-center text-lg">{cliente.description}</p>
-              <hr className="my-24 mx-96" />
+              <p className="px-32 text-center text-xl">{cliente.description}</p>
+              <hr className="my-24 mx-96 border-palette-orange border-opacity-75 border-2" />
             </div>
           ))}
         </div>

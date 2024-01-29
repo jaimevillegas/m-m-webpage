@@ -1,23 +1,42 @@
+import { Link } from "react-router-dom";
+import logo from "./assets/logo2.png";
+
 function Footer() {
   return (
-    <footer className="footer p-10 bg-base-300 text-base-content">
-      <nav>
-        <header className="footer-title">Services</header>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+    <footer className="footer flex justify-between items-end p-10 bg-palette-sky-blue ">
+      <nav className=" items-center my-auto w-1/4">
+        <img src={logo} alt="logo" />
       </nav>
       <nav>
-        <header className="footer-title">Company</header>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <header className="footer-title">MAPA DEL SITIO</header>
+        <Link to="/" className="link link-hover">
+          INICIO
+        </Link>
+        <Link to="/ingenieria" className="link link-hover">
+          INGENIERÍA Y DISEÑO
+        </Link>
+        <Link to="/consultoria" className="link link-hover">
+          CONSULTORÍA
+        </Link>
+        <Link to="/galeria" className="link link-hover">
+          GALERÍA
+        </Link>
+        <Link to="/clientes-proyectos" className="link link-hover">
+          CLIENTES Y PROYECTOS
+        </Link>
+        <Link to="/contacto" className="link link-hover">
+          CONTÁCTENOS
+        </Link>
       </nav>
-      <nav>
-        <header className="footer-title">Social</header>
-        <div className="grid grid-flow-col gap-4">
+      <nav className="w-1/3 flex-row items-end justify-end align-bottom">
+        {/* <header className="footer-title"></header> */}
+        <div className="text-gray-500 text-sm">
+          Contamos con nuestro Sistema de Gestión Vigente
+        </div>
+        <div className="text-gray-500 text-sm">
+          Estamos en pro de las Certificaciones de Calidad
+        </div>
+        {/* <div className="grid grid-flow-col gap-4">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +70,7 @@ function Footer() {
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
             </svg>
           </a>
-        </div>
+        </div> */}
       </nav>
     </footer>
   );
