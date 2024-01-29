@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import GoogleMapReact from "google-map-react";
 import "./map.css";
-import LocationPin from "./LocationPin";
+// import LocationPin from "./LocationPin";
 
 function Map2({ location, zoomLevel }) {
   return (
@@ -16,11 +16,11 @@ function Map2({ location, zoomLevel }) {
           defaultCenter={location}
           defaultZoom={zoomLevel}
         >
-          <LocationPin
+          {/* <LocationPin
             lat={location.lat}
             lng={location.lng}
             text={location.address}
-          />
+          /> */}
         </GoogleMapReact>
       </div>
     </div>

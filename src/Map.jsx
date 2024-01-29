@@ -8,9 +8,9 @@ export default GoogleApiWrapper({
 
 function CompanyMap(props) {
   const mapStyles = {
-    position: "relative",
+    position: "absolute",
     width: "95%",
-    height: "35%",
+    height: "55%",
   };
 
   return (
