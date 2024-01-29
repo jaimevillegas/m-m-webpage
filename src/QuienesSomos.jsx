@@ -12,7 +12,7 @@ function QuienesSomos() {
         sector de Hidrocarburos, Minería, Geología y Obras Civiles. Con la
         trayectoria de nuestros profesionales nos ha permitido fortalecer y
         ampliar nuestro campo de trabajo, brindando nuevas tecnologías y
-        procedimientos calificados y certificados
+        procedimientos calificados y certificados.
       </p>
       <Carousel />
     </div>
