@@ -10,17 +10,19 @@ function CompanyMap(props) {
   const mapStyles = {
     position: "relative",
     width: "95%",
-    height: "55%",
+    height: "35%",
   };
 
   return (
-    <Map
-      google={props.google}
-      zoom={17}
-      style={mapStyles}
-      initialCenter={{ lat: 3.8301766, lng: -73.69300098 }}
-    >
-      <Marker position={{ lat: 3.8301766, lng: -73.69300098 }} />
-    </Map>
+    <div>
+      <Map
+        google={props.google}
+        zoom={17}
+        style={mapStyles}
+        initialCenter={{ lat: 3.8301766, lng: -73.69300098 }}
+      >
+        <Marker position={{ lat: 3.8301766, lng: -73.69300098 }} />
+      </Map>
+    </div>
   );
 }

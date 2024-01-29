@@ -1,8 +1,14 @@
 // import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import Map from "./Map";
+// import Map from "./Map";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
+import Map2 from "./Map2";
+
+const location = {
+  lat: 3.8301766,
+  lng: -73.69300098,
+};
 
 function Contacto() {
   return (
@@ -17,10 +23,7 @@ function Contacto() {
             Estamos ubicados en la Calle 15A Nro. 36-04, en el barrio Bella
             suiza - Acacías, Meta
           </p>
-          <div className="h-full items-center mb-96 ">
-            <Map />
-          </div>
-          <p className="text-center text-xl pt-12 mt-96">
+          <p className="text-center text-xl pt-12 ">
             Puedes ponerte en contacto con nosotros a través de estos medios:
           </p>
           <div className="flex gap-4 pt-10 justify-center items-center">
@@ -48,6 +51,10 @@ function Contacto() {
           <div className="flex gap-4 pb-10 pt-4 justify-center items-center">
             <IconPhoneFilled />
             <p className="text-left text-xl">3188982231</p>
+          </div>
+          <div className="  items-center ">
+            {/* <Map /> */}
+            <Map2 location={location} zoomLevel={17} />
           </div>
         </div>
         <div className="mt-16"></div>
