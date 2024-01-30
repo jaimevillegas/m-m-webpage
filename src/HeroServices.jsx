@@ -36,7 +36,7 @@ function HeroServices() {
               icon={IconSettings}
               title={"Estudios Geotécnicos - Civiles - Mecánicos"}
               list1={"Estudios de Suelos"}
-              list2={"Muestreos SPT"}
+              list2={"Muestreo y perforación SPT"}
               list3={"Apiques"}
             />
           </div>

@@ -22,7 +22,7 @@ function Consultoria() {
               Perforaciones mecánicas y a rotación
             </li>
             <li className="text-xl my-4">Laboratorio de suelos </li>
-            <li className="text-xl my-4">Muestreos SPT</li>
+            <li className="text-xl my-4">Muestreo y perforación SPT</li>
             <li className="text-xl my-4">Apiques</li>
             <li className="text-xl my-4">
               Levantamientos topográficos altimétricos y planimétricos,
