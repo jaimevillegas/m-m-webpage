@@ -3,8 +3,8 @@ import logo from "./assets/logo2.png";
 
 function Footer() {
   return (
-    <footer className="footer flex justify-between items-end p-10 bg-palette-sky-blue ">
-      <nav className=" items-center my-auto w-1/4">
+    <footer className="footer flex flex-col lg:flex-row items-center lg:justify-between lg:items-end p-10 bg-palette-sky-blue ">
+      <nav className=" items-center my-auto w-full lg:w-1/4">
         <img src={logo} alt="logo" />
       </nav>
       <nav>
@@ -28,12 +28,12 @@ function Footer() {
           CONTÁCTENOS
         </Link>
       </nav>
-      <nav className="w-1/3 flex-row items-end justify-end align-bottom">
+      <nav className="w-4/5 lg:w-1/3 flex-row items-end justify-end align-bottom">
         {/* <header className="footer-title"></header> */}
-        <div className="text-gray-500 text-sm">
+        <div className="text-gray-500 text-sm text-center lg:text-left">
           Contamos con nuestro Sistema de Gestión Vigente
         </div>
-        <div className="text-gray-500 text-sm">
+        <div className="text-gray-500 text-sm text-center lg:text-left">
           Estamos en pro de las Certificaciones de Calidad
         </div>
         {/* <div className="grid grid-flow-col gap-4">
