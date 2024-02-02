@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -12,11 +13,30 @@ import client5 from "./assets/clients/pacolombia.png";
 import client6 from "./assets/clients/pei.png";
 
 function ClientsCarousel() {
+  const [slidesPerView, setSlidesPerView] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(1);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className=" m-0 pt-0 pb-10 px-36">
+    <div className=" m-0 pt-0 pb-10 px-2 lg:px-36">
       <div className="p-10 bg-white">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={slidesPerView}
           spaceBetween={120}
           autoplay={{
             delay: 3000,
