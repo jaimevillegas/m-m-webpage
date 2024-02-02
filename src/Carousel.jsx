@@ -13,7 +13,7 @@ import carousel6 from "./assets/carousel/carousel6.jpeg";
 
 function Carousel() {
   return (
-    <div className=" m-0 pb-10 px-36">
+    <div className=" m-0 pb-10 lg:px-36">
       <div className="p-10 bg-white">
         <Swiper
           navigation={true}
