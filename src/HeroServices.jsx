@@ -5,14 +5,14 @@ import heroServicesImg from "./assets/heroServicesImg.jpeg";
 function HeroServices() {
   return (
     <div className="pb-0 pt-10 mb-0 bg-base-200 topo-pattern">
-      <h1 className="text-7xl font-bold text-palette-dark-blue text-center pt-5 mb-10">
+      <h1 className="text-5xl lg:text-7xl font-bold text-palette-dark-blue text-center pt-5 mb-10">
         Servicios
       </h1>
-      <div className="px-12 gap-5 flex justify-between py-10 w-full">
-        <div className="w-1/2">
+      <div className="px-2 lg:px-12 gap-5 flex flex-col lg:flex-row justify-between py-2 lg:py-10 w-full">
+        <div className="w-full lg:w-1/2">
           <img src={heroServicesImg} className="w-full rounded-lg" />
         </div>
-        <div className="w-1/2 flex flex-col justify-between items-start gap-2">
+        <div className="w-full lg:w-1/2 flex flex-col justify-between items-start gap-2">
           <div className="w-full">
             <HorizontalCard
               icon={IconSettings}
