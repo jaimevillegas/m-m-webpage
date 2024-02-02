@@ -6,8 +6,8 @@ function Ingenieria() {
     <>
       <NavBar />
       <div className="pb-0 pt-10 mb-0 bg-base-200 gear-pattern">
-        <div className="card bg-white mx-32 mt-32 p-10 shadow-xl">
-          <h1 className="font-poppins font-semibold text-palette-dark-blue text-6xl text-center">
+        <div className="card bg-white lg:mx-32 mt-24 lg:mt-32 lg:p-10 mx-4 px-4  shadow-xl">
+          <h1 className="font-poppins font-semibold text-palette-dark-blue text-5xl pt-8 lg:text-6xl text-center">
             INGENIERÍA Y DISEÑO
           </h1>
           <ul className="p-10 list-disc">
