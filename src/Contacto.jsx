@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { IconMailFilled, IconPhoneFilled } from "@tabler/icons-react";
@@ -9,8 +8,8 @@ function Contacto() {
     <>
       <NavBar />
       <div className="pb-0 pt-10 mb-0 bg-base-200  gallery-pattern">
-        <div className="card bg-white mx-32 mt-32 p-10 shadow-xl">
-          <h1 className="font-poppins font-semibold text-6xl text-center mb-5 text-palette-dark-blue">
+        <div className="card bg-white lg:mx-32 lg:mt-32 mt-24 lg:p-10 mx-4 px-4 shadow-xl">
+          <h1 className="font-poppins font-semibold lg:text-6xl text-4xl pt-8 text-center mb-5 text-palette-dark-blue">
             CONTÁCTENOS
           </h1>
           <div className="h-96 w-full items-center ">
@@ -24,7 +23,7 @@ function Contacto() {
             <IconMailFilled />
             <a
               href="mailto:contacto.geoingenieriamm@gmail.com"
-              className="text-xl"
+              className="text-md lg:text-xl"
             >
               contacto@geoingenieriamm.com
             </a>
@@ -33,7 +32,7 @@ function Contacto() {
             <IconMailFilled />
             <a
               href="mailto:gerencia.geoingenieriamm@gmail.com"
-              className="text-xl"
+              className="text-md lg:text-xl"
             >
               gerencia@geoingenieriamm.com
             </a>
@@ -50,8 +49,8 @@ function Contacto() {
             También puedes comunicarte con nosotros usando el siguiente
             formulario:
           </p>
-          <div className="flex gap-4 pb-10 pt-4 justify-center items-center ">
-            <form className="bg-white rounded px-8 pt-6 pb-8 mb-4">
+          <div className="flex gap-4   pb-10 pt-4 justify-center items-center ">
+            <form className="  rounded lg:px-8 p-0 m-0 pt-6 pb-8 mb-4">
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
@@ -60,12 +59,13 @@ function Contacto() {
                   Nombre
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded lg:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="name"
                   type="text"
                   placeholder="Tu Nombre"
                 />
               </div>
+
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
@@ -74,7 +74,7 @@ function Contacto() {
                   E-mail
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded lg:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="email"
                   type="email"
                   placeholder="E-mail"
@@ -82,13 +82,13 @@ function Contacto() {
               </div>
               <div className="mb-6">
                 <label
-                  className="block text-gray-700 w-96 text-sm font-bold mb-2"
+                  className="block text-gray-700 lg:w-96 text-sm font-bold mb-2"
                   htmlFor="message"
                 >
                   Mensaje
                 </label>
                 <textarea
-                  className="shadow appearance-none h-48 border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none h-48 border rounded lg:w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="message"
                   placeholder="Mensaje"
                 />
