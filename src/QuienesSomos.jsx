@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 function QuienesSomos() {
   return (
     <div>
-      <h1 className="px-6 text-5xl lg:text-7xl font-bold text-palette-dark-blue text-center py-16">
+      <h1 className="px-6 text-5xl lg:text-7xl font-bold text-palette-dark-blue text-center py-16 mt-12">
         ¿Quiénes Somos?
       </h1>
       <p className="px-8 lg:px-40 py-4 lg:py-10 text-xl lg:text-2xl text-center">

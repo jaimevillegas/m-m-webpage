@@ -37,7 +37,8 @@ function HeroServices() {
               title={"Estudios Geotécnicos - Civiles - Mecánicos"}
               list1={"Estudios de Suelos"}
               list2={"Muestreo y perforación SPT"}
-              list3={"Apiques"}
+              list3={"Diseño de Perforaciones Horizontales Dirigidas (PHD)"}
+              list4={"Ingeniería Conceptual, Básica y de Detalle"}
             />
           </div>
           <div className="w-full">

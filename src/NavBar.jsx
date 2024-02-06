@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="navbar bg-palette-sky-blue fixed shadow z-10 w-full">
-      <div className="navbar-start w-full">
+    <div className=" navbar items-center  bg-palette-sky-blue fixed shadow z-10 w-full ">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div
             tabIndex={0}
@@ -67,7 +67,7 @@ function NavBar() {
           <img src={logo} alt="logo" className="h-20" />
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden  lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link to="/">
