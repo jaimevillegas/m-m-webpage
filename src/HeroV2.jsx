@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import hero2 from "./assets/hero3.jpg";
 
 function HeroV2() {
   return (
-    <div className=" justify-center items-center   pt-24">
+    <div className=" justify-center items-center pt-12 lg:pt-24">
       <div className="w-full h-screen  topo-pattern flex items-center justify-center">
-        <div className="px-6 lg:px-32">
+        <div className="px-6 lg:px-32 pt-0">
           <h1 className="text-3xl lg:text-5xl  font-bold text-palette-orange text-center">
             BIENVENIDO A
           </h1>
@@ -17,7 +18,9 @@ function HeroV2() {
           </p>
           <div className="my-12 flex items-center justify-center">
             <button className="btn btn-lg bg-palette-blue text-white text-center m-auto text-2xl hover:bg-palette-dark-blue">
-              CONTÁCTENOS
+              <Link to="/contacto" className="text-2xl">
+                CONTÁCTENOS
+              </Link>
             </button>
           </div>
         </div>
